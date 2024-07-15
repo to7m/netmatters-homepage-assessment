@@ -14,7 +14,6 @@ body {
 
 img, picture, video, canvas, svg {
   display: block;
-  max-width: 100%;
 }
 
 input, button, textarea, select {
@@ -23,6 +22,12 @@ input, button, textarea, select {
 
 #top-row {
   margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#top-logo {
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=main.css.map */
