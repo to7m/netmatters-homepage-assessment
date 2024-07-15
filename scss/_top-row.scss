@@ -7,3 +7,9 @@
 #top-logo {
     object-fit: contain;
 }
+
+#call-button--icon {
+    @include insert-icon-if-bitmap("call") {
+        width: 100px;
+    }
+}

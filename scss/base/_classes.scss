@@ -1,0 +1,10 @@
+.non-bitmap-media-only {
+    @media handheld, print, projection, screen, tv {
+        display: none;
+    }
+}
+.bitmap-media-only {
+    @media braille, embossed, speech, tty {
+        display: none;
+    }
+}

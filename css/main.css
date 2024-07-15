@@ -20,6 +20,18 @@ input, button, textarea, select {
   font: inherit;
 }
 
+@media handheld, print, projection, screen, tv {
+  .non-bitmap-media-only {
+    display: none;
+  }
+}
+
+@media braille, embossed, speech, tty {
+  .bitmap-media-only {
+    display: none;
+  }
+}
+
 #top-row {
   margin: 15px;
   display: flex;
@@ -28,6 +40,13 @@ input, button, textarea, select {
 
 #top-logo {
   object-fit: contain;
+}
+
+#call-button--icon::before {
+  visibility: visible;
+  font-family: icomoon;
+  content: "\e902";
+  width: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
