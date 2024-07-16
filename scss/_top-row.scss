@@ -1,3 +1,6 @@
+@use "icons";
+
+
 #top-row {
     margin: 15px;
     display: flex;
@@ -9,7 +12,7 @@
 }
 
 #call-button--icon {
-    @include insert-icon-if-bitmap("call") {
+    @include icons.prepend("phone") {
         width: 100px;
     }
 }

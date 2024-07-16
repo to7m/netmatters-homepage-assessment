@@ -9,6 +9,7 @@
 
 body {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   line-height: calc(1em + 0.5rem);
 }
 
@@ -32,6 +33,22 @@ input, button, textarea, select {
   }
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../icomoon-fonts/fonts/icomoon.eot?fv394j");
+  src: url("../icomoon-fonts/fonts/icomoon.eot?fv394j#iefix") format("embedded-opentype"), url("../icomoon-fonts/fonts/icomoon.ttf?fv394j") format("truetype"), url("../icomoon-fonts/fonts/icomoon.woff?fv394j") format("woff"), url("../icomoon-fonts/fonts/icomoon.svg?fv394j#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../icomoon-fonts/fonts/icomoon.eot?fv394j");
+  src: url("../icomoon-fonts/fonts/icomoon.eot?fv394j#iefix") format("embedded-opentype"), url("../icomoon-fonts/fonts/icomoon.ttf?fv394j") format("truetype"), url("../icomoon-fonts/fonts/icomoon.woff?fv394j") format("woff"), url("../icomoon-fonts/fonts/icomoon.svg?fv394j#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 #top-row {
   margin: 15px;
   display: flex;
@@ -43,9 +60,13 @@ input, button, textarea, select {
 }
 
 #call-button--icon::before {
-  visibility: visible;
-  font-family: icomoon;
-  content: "\e902";
+  content: "\e942";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   width: 100px;
 }
 
