@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!-- just a temporary page mostly written by ChatGPT to make colour matching quicker -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex to RGB Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hex to RGB Converter</h2>
+        <input type="text" id="hexInput" placeholder="Enter hex color value (e.g., #ffffff)">
+        <button onclick="convertHexToRGB()">Convert</button>
+        <p id="rgbOutput"></p>
+    </div>
+
+    <script>
+        function convertHexToRGB() {
+            var hex = document.getElementById('hexInput').value;
+            // Remove # if present
+            hex = hex.replace('#', '');
+
+            // Convert hex to RGB
+            var r = parseInt(hex.substring(0, 2), 16);
+            var g = parseInt(hex.substring(2, 4), 16);
+            var b = parseInt(hex.substring(4, 6), 16);
+
+            // Display RGB value
+            var rgb = 'rgb(' + Math.round(r / 255 * 100) + '%, ' + Math.round(g / 255 * 100) + '%, ' + Math.round(b / 255 * 100) + '%)';
+            document.getElementById('rgbOutput').textContent = rgb;
+        }
+    </script>
+</body>
+</html>
