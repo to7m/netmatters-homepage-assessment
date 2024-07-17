@@ -21,6 +21,11 @@ input, button, textarea, select {
   font: inherit;
 }
 
+* {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 @media handheld, print, projection, screen, tv {
   .non-bitmap-media-only {
     display: none;
@@ -49,16 +54,6 @@ input, button, textarea, select {
   font-style: normal;
   font-display: block;
 }
-#top-row {
-  margin: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#top-logo {
-  object-fit: contain;
-}
-
 #call-button--icon::before {
   content: "\e942";
   font-family: "icomoon" !important;
@@ -68,6 +63,46 @@ input, button, textarea, select {
   text-transform: none;
   line-height: 1;
   width: 100px;
+}
+
+#top-row {
+  margin: 20px 15px;
+  display: grid;
+  grid-template-columns: 1fr 32px 53px;
+  grid-template-rows: 70px, 47px;
+  gap: 11px 20px;
+  height: 168px;
+}
+
+#home-link {
+  grid-area: 1 1 1 1;
+}
+
+#specifics-nav {
+  display: contents;
+}
+
+#support-button, #contact-button {
+  display: none;
+}
+
+#call-button {
+  grid-area: 1 2 1 2;
+  font-size: 32px;
+}
+
+#hamburger-button {
+  grid-area: 1 3 1 3;
+}
+
+#search-form {
+  grid-area: 2 1 2 3;
+}
+
+@media (min-width: 768px) {
+  #top-row {
+    height: 100px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
