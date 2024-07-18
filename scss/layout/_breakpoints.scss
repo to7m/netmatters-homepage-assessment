@@ -1,3 +1,17 @@
-$a: 768px;
-$b: 992px;
-$c: 1260px;
+@mixin a {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin b {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin c {
+    @media (min-width: 1260px) {
+        @content;
+    }
+}
