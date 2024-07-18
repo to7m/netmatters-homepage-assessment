@@ -446,5 +446,8 @@ footer {
     grid-area: 2 / 10 / 3 / 13;
   }
 }
+#articles {
+  background-color: rgb(51, 54, 69);
+}
 
 /*# sourceMappingURL=main.css.map */
