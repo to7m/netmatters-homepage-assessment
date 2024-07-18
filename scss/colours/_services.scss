@@ -1,0 +1,6 @@
+@use "defs";
+
+
+#services h1 {
+    color: defs.$dark_grey;
+}

@@ -1,4 +1,3 @@
-@use "../colours";
 @use "breakpoints";
 
 
@@ -35,14 +34,6 @@ $_list_item_suffixes: (
     grid-template-columns: 100%;
 }
 
-#services h1 {
-    font-family: Poppins, sans-serif;
-    font-size: 2.7rem;
-    letter-spacing: 0.4px;
-    font-weight: 400;
-    color: colours.$dark_grey;
-}
-
 #services ul {
     display: grid;
     gap: 30px;
@@ -70,7 +61,7 @@ $_list_item_suffixes: (
         "7 / 1 / 8 / 2"
     )
 );
-@media (min-width: breakpoints.$a) {
+@include breakpoints.a {
     @include _list_layout(
         $columns: 2, $rows: 5,
         $items_positions_list: (
@@ -84,7 +75,7 @@ $_list_item_suffixes: (
         )
     );
 }
-@media (min-width: breakpoints.$b) {
+@include breakpoints.b {
     @include _list_layout(
         $columns: 6, $rows: 3,
         $items_positions_list: (
@@ -98,7 +89,7 @@ $_list_item_suffixes: (
         )
     );
 }
-@media (min-width: breakpoints.$c) {
+@include breakpoints.c {
     @include _list_layout(
         $columns: 12, $rows: 2,
         $items_positions_list: (

@@ -1,0 +1,17 @@
+@use "fonts/icon";
+
+
+#call-button--icon {
+    font-size: 27px;
+    @include icon.prepend("phone")
+}
+
+#menu-button--icon {
+    font-size: 60px;
+    color: rgb(100%, 100%, 100%);
+    @include icon.prepend("menu")
+}
+
+#search-form--button {
+    @include icon.prepend("search")
+}

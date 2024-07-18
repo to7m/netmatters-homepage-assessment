@@ -1,6 +1,13 @@
-@use "../colours";
+@use "breakpoints";
 
 
 #articles {
-    background-color: colours.$dark_grey
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+
+    @include breakpoints.b {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+    }
 }

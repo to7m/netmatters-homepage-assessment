@@ -8,16 +8,10 @@
     @return min(100% - 30px, $target_width);
 }
 
-@mixin _for_viewport_width($vw, $target_width) {
-    @media (min-width: $vw) {
-        width: _ensured_margin_width($target_width)
-    }
-}
-
 @mixin _responsive_width {
     width: _ensured_margin_width(720px);
-    @include _for_viewport_width(breakpoints.$b, 940px);
-    @include _for_viewport_width(breakpoints.$c, 1170px);
+    @include breakpoints.b { width: _ensured_margin_width(940px) }
+    @include breakpoints.c { width: _ensured_margin_width(1170px) }
 
     margin-left: auto;
     margin-right: auto;
