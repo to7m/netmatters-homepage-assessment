@@ -1,5 +1,39 @@
 @use "../colours";
+@use "breakpoints";
 
+
+$_list_item_suffixes: (
+    "bespoke-software",
+    "it-support",
+    "digital-marketing",
+    "telecoms-services",
+    "web-design",
+    "cyber-security",
+    "developer-training"
+);
+
+
+@mixin _list_layout($columns, $rows, $items_positions_list) {
+    #services ul {
+        grid-template-rows: repeat($rows, auto);
+        grid-template-columns: repeat($columns, 1fr);
+    }
+
+    @for $i from 1 through 7 {
+        $suffix: nth($_list_item_suffixes, $i);
+        $position: nth($items_positions_list, $i);
+
+        #services-list__#{$suffix} { grid-area: #{$position}; }
+    }
+}
+
+
+#services {
+    margin-top: 37px;
+    display: grid;
+    grid-template-rows: 119px auto auto;
+    grid-template-columns: 100%;
+}
 
 #services h1 {
     font-family: Poppins, sans-serif;
@@ -7,4 +41,74 @@
     letter-spacing: 0.4px;
     font-weight: 400;
     color: colours.$dark_grey;
+}
+
+#services ul {
+    display: grid;
+    gap: 30px;
+}
+
+#services li {
+    display: contents;
+}
+
+#services ul a {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@include _list_layout(
+    $columns: 1, $rows: 7,
+    $items_positions_list: (
+        "1 / 1 / 2 / 2",
+        "2 / 1 / 3 / 2",
+        "3 / 1 / 4 / 2",
+        "4 / 1 / 5 / 2",
+        "5 / 1 / 6 / 2",
+        "6 / 1 / 7 / 2",
+        "7 / 1 / 8 / 2"
+    )
+);
+@media (min-width: breakpoints.$a) {
+    @include _list_layout(
+        $columns: 2, $rows: 5,
+        $items_positions_list: (
+            "1 / 1 / 2 / 3",
+            "2 / 1 / 3 / 3",
+            "3 / 1 / 4 / 3",
+            "4 / 1 / 5 / 2",
+            "4 / 2 / 5 / 3",
+            "5 / 1 / 6 / 2",
+            "5 / 2 / 6 / 3"
+        )
+    );
+}
+@media (min-width: breakpoints.$b) {
+    @include _list_layout(
+        $columns: 6, $rows: 3,
+        $items_positions_list: (
+            "1 / 1 / 2 / 3",
+            "1 / 3 / 2 / 5",
+            "1 / 5 / 2 / 7",
+            "2 / 1 / 3 / 4",
+            "2 / 4 / 3 / 7",
+            "3 / 1 / 4 / 4",
+            "3 / 4 / 4 / 7"
+        )
+    );
+}
+@media (min-width: breakpoints.$c) {
+    @include _list_layout(
+        $columns: 12, $rows: 2,
+        $items_positions_list: (
+            "1 / 1 / 2 / 5",
+            "1 / 5 / 2 / 9",
+            "1 / 9 / 2 / 13",
+            "2 / 1 / 3 / 4",
+            "2 / 4 / 3 / 7",
+            "2 / 7 / 3 / 10",
+            "2 / 10 / 3 / 13"
+        )
+    );
 }

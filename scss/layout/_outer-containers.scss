@@ -1,3 +1,6 @@
+@use "breakpoints";
+
+
 @function _ensured_margin_width($target_width) {
     // Resulting width may end up lower to ensure 15px margin. This is mainly to combat the
     // horizontal space the scroll bar takes up on small zoomed-out screens.
@@ -13,8 +16,8 @@
 
 @mixin _responsive_width {
     width: _ensured_margin_width(720px);
-    @include _for_viewport_width(992px, 940px);
-    @include _for_viewport_width(1260px, 1170px);
+    @include _for_viewport_width(breakpoints.$b, 940px);
+    @include _for_viewport_width(breakpoints.$c, 1170px);
 
     margin-left: auto;
     margin-right: auto;
@@ -25,11 +28,6 @@
     @include _responsive_width;
     margin-top: 20px;
     margin-bottom: 20px;
-
-    display: grid;
-    grid-template-columns: 1fr 32px 63px;
-    grid-template-rows: 70px 47px;
-    gap: 11px 20px;
 }
 
 #services {
