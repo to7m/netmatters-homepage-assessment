@@ -5,6 +5,12 @@
     margin-bottom: 26px;
 }
 
+#socials--logo {
+    width: 250px;
+
+    @include breakpoints.a { width: 320px; }
+}
+
 #text-links-outer-list {
     display: grid;
     grid-template-rows: repeat(4, auto);

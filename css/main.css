@@ -284,6 +284,15 @@ ol, ul {
   margin-bottom: 26px;
 }
 
+#socials--logo {
+  width: 250px;
+}
+@media (min-width: 480px) {
+  #socials--logo {
+    width: 320px;
+  }
+}
+
 #text-links-outer-list {
   display: grid;
   grid-template-rows: repeat(4, auto);
