@@ -1,6 +1,10 @@
 @use "breakpoints";
 
 
+#socials-and-text-links h2 {
+    margin-bottom: 26px;
+}
+
 #text-links-outer-list {
     display: grid;
     grid-template-rows: repeat(4, auto);
