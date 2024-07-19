@@ -14,7 +14,7 @@ $_total_min_padding: $_min_padding * 2;
 }
 
 
-.outer_margin {
+#top-row, #services, #articles, #news, #socials-and-text-links, #copyright {
     width: _pad_width(720px);
     @include breakpoints.c { width: _pad_width(940px); }
     @include breakpoints.d { width: _pad_width(1170px); }
@@ -23,7 +23,12 @@ $_total_min_padding: $_min_padding * 2;
     margin-right: auto;
 }
 
+
 #top-row {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#copyright {
+    display: block;
 }
