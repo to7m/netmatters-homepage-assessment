@@ -1,0 +1,12 @@
+@use "defs";
+
+
+.light {
+    background-color: defs.$white;
+    color: defs.$dark_grey;
+}
+
+.dark {
+    background-color: defs.$dark_grey;
+    color: defs.$white;
+}

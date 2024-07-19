@@ -1,41 +1,29 @@
 @use "breakpoints";
 
 
-@function _ensured_margin_width($target_width) {
-    // Resulting width may end up lower to ensure 15px margin. This is mainly to combat the
-    // horizontal space the scroll bar takes up on small zoomed-out screens.
+$_min_padding: 15px;
 
-    @return min(100% - 30px, $target_width);
+$_total_min_padding: $_min_padding * 2;
+
+
+@function _pad_width($width) {
+    // Resulting width may end up lower (padded) to ensure 15px margin. This is mainly to combat 
+    // the horizontal space the scroll bar takes up on small zoomed-out screens.
+
+    @return min(100% - ($_total_min_padding), $width);
 }
 
-@mixin _responsive_width {
-    width: _ensured_margin_width(720px);
-    @include breakpoints.c { width: _ensured_margin_width(940px) }
-    @include breakpoints.d { width: _ensured_margin_width(1170px) }
+
+.outer_margin {
+    width: _pad_width(720px);
+    @include breakpoints.c { width: _pad_width(940px); }
+    @include breakpoints.d { width: _pad_width(1170px); }
 
     margin-left: auto;
     margin-right: auto;
 }
 
-
 #top-row {
-    @include _responsive_width;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-#services {
-    @include _responsive_width;
-}
-
-#articles {
-    @include _responsive_width;
-}
-
-#news {
-    @include _responsive_width;
-}
-
-footer {
-    @include _responsive_width;
 }

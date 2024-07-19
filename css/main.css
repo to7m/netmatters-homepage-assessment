@@ -43,86 +43,25 @@ input, button, textarea, select {
   }
 }
 
-#top-row {
+.outer_margin {
   width: min(100% - 30px, 720px);
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 992px) {
+  .outer_margin {
+    width: min(100% - 30px, 940px);
+  }
+}
+@media (min-width: 1260px) {
+  .outer_margin {
+    width: min(100% - 30px, 1170px);
+  }
+}
+
+#top-row {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-@media (min-width: 992px) {
-  #top-row {
-    width: min(100% - 30px, 940px);
-  }
-}
-@media (min-width: 1260px) {
-  #top-row {
-    width: min(100% - 30px, 1170px);
-  }
-}
-
-#services {
-  width: min(100% - 30px, 720px);
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (min-width: 992px) {
-  #services {
-    width: min(100% - 30px, 940px);
-  }
-}
-@media (min-width: 1260px) {
-  #services {
-    width: min(100% - 30px, 1170px);
-  }
-}
-
-#articles {
-  width: min(100% - 30px, 720px);
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (min-width: 992px) {
-  #articles {
-    width: min(100% - 30px, 940px);
-  }
-}
-@media (min-width: 1260px) {
-  #articles {
-    width: min(100% - 30px, 1170px);
-  }
-}
-
-#news {
-  width: min(100% - 30px, 720px);
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (min-width: 992px) {
-  #news {
-    width: min(100% - 30px, 940px);
-  }
-}
-@media (min-width: 1260px) {
-  #news {
-    width: min(100% - 30px, 1170px);
-  }
-}
-
-footer {
-  width: min(100% - 30px, 720px);
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (min-width: 992px) {
-  footer {
-    width: min(100% - 30px, 940px);
-  }
-}
-@media (min-width: 1260px) {
-  footer {
-    width: min(100% - 30px, 1170px);
-  }
 }
 
 #top-row {
@@ -434,7 +373,6 @@ footer {
 
 #menu-button--icon {
   font-size: 60px;
-  color: rgb(255, 255, 255);
 }
 #menu-button--icon::before {
   content: "\e9bd";
@@ -463,27 +401,18 @@ footer {
   font-weight: 400;
 }
 
-#menu-button {
+.light {
+  background-color: rgb(255, 255, 255);
+  color: rgb(51, 54, 69);
+}
+
+.dark {
   background-color: rgb(51, 54, 69);
   color: rgb(255, 255, 255);
 }
 
 #search-form {
   background-color: rgb(230, 230, 230);
-}
-
-#services h1 {
-  color: rgb(51, 54, 69);
-}
-
-#articles {
-  background-color: rgb(51, 54, 69);
-  color: rgb(255, 255, 255);
-}
-
-footer {
-  background-color: rgb(51, 54, 69);
-  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=main.css.map */

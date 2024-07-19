@@ -8,7 +8,6 @@
 
 #menu-button--icon {
     font-size: 60px;
-    color: rgb(100%, 100%, 100%);
     @include icon.prepend("menu")
 }
 
