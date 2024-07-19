@@ -61,7 +61,7 @@ $_list_item_suffixes: (
         "7 / 1 / 8 / 2"
     )
 );
-@include breakpoints.a {
+@include breakpoints.b {
     @include _list_layout(
         $columns: 2, $rows: 5,
         $items_positions_list: (
@@ -75,7 +75,7 @@ $_list_item_suffixes: (
         )
     );
 }
-@include breakpoints.b {
+@include breakpoints.c {
     @include _list_layout(
         $columns: 6, $rows: 3,
         $items_positions_list: (
@@ -89,7 +89,7 @@ $_list_item_suffixes: (
         )
     );
 }
-@include breakpoints.c {
+@include breakpoints.d {
     @include _list_layout(
         $columns: 12, $rows: 2,
         $items_positions_list: (

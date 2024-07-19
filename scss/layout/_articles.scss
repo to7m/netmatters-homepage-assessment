@@ -6,7 +6,7 @@
     grid-template-rows: auto auto;
     grid-template-columns: 100%;
 
-    @include breakpoints.b {
+    @include breakpoints.c {
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
     }

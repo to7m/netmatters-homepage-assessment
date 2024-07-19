@@ -10,8 +10,8 @@
 
 @mixin _responsive_width {
     width: _ensured_margin_width(720px);
-    @include breakpoints.b { width: _ensured_margin_width(940px) }
-    @include breakpoints.c { width: _ensured_margin_width(1170px) }
+    @include breakpoints.c { width: _ensured_margin_width(940px) }
+    @include breakpoints.d { width: _ensured_margin_width(1170px) }
 
     margin-left: auto;
     margin-right: auto;

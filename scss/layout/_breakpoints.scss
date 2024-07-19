@@ -1,16 +1,22 @@
 @mixin a {
-    @media (min-width: 768px) {
+    @media (min-width: 481px) {
         @content;
     }
 }
 
 @mixin b {
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
         @content;
     }
 }
 
 @mixin c {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin d {
     @media (min-width: 1260px) {
         @content;
     }
