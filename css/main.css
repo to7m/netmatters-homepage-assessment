@@ -288,8 +288,8 @@ ol, ul {
   display: grid;
   grid-template-rows: repeat(4, auto);
   grid-template-columns: 100%;
-  align-items: top;
-  justify-items: left;
+  align-items: start;
+  justify-items: start;
 }
 @media (min-width: 768px) {
   #text-links-outer-list {
