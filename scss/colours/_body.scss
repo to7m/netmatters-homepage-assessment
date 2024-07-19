@@ -1,12 +1,39 @@
 @use "defs";
 
 
-.light {
+@mixin light {
     background-color: defs.$white;
     color: defs.$dark_grey;
 }
 
-.dark {
+@mixin dark {
     background-color: defs.$dark_grey;
+    color: defs.$white;
+}
+
+
+#top-row-container{
+    background-color: defs.$white;
+    color: defs.$white;
+}
+
+#services-nav { @include dark; }
+
+#slideshow { color: defs.$white; }
+
+#services-container { @include light; }
+
+#credentials { background-color: defs.$white; }
+
+#articles-container { @include dark; }
+
+#news-container { @include light; }
+
+#corporate-customers {background-color: defs.$white; }
+
+#socials-and-text-links-container { @include dark; }
+
+#copyright-container {
+    background-color: defs.$darker_grey;
     color: defs.$white;
 }

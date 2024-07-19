@@ -401,13 +401,50 @@ input, button, textarea, select {
   font-weight: 400;
 }
 
-.light {
+#top-row-container {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+#services-nav {
+  background-color: rgb(51, 54, 69);
+  color: rgb(255, 255, 255);
+}
+
+#slideshow {
+  color: rgb(255, 255, 255);
+}
+
+#services-container {
   background-color: rgb(255, 255, 255);
   color: rgb(51, 54, 69);
 }
 
-.dark {
+#credentials {
+  background-color: rgb(255, 255, 255);
+}
+
+#articles-container {
   background-color: rgb(51, 54, 69);
+  color: rgb(255, 255, 255);
+}
+
+#news-container {
+  background-color: rgb(255, 255, 255);
+  color: rgb(51, 54, 69);
+}
+
+#corporate-customers {
+  background-color: rgb(255, 255, 255);
+}
+
+#socials-and-text-links-container {
+  background-color: rgb(51, 54, 69);
+  color: rgb(255, 255, 255);
+}
+
+#copyright-container {
+  background-color: rgb(33, 36, 48);
   color: rgb(255, 255, 255);
 }
 
