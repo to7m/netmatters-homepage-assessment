@@ -408,6 +408,10 @@ body {
   font-weight: 400;
 }
 
+#text-links-outer-list li li, #copyright {
+  font-size: 0.8125em;
+}
+
 #top-row-container {
   background-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
