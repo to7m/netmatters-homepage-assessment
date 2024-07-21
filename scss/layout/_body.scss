@@ -14,7 +14,7 @@ $_total_min_padding: $_min_padding * 2;
 }
 
 
-#top-row, #services, #articles, #news, #socials-and-text-links, #copyright {
+#top-row, #services-nav ul, #services, #articles, #news, #socials-and-text-links, #copyright {
     width: _pad_width(720px);
     @include breakpoints.c { width: _pad_width(940px); }
     @include breakpoints.d { width: _pad_width(1170px); }

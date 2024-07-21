@@ -1,0 +1,22 @@
+@use "fonts/icon";
+
+
+#services-nav a {
+    font-size: 10px;
+    text-align: center;
+}
+
+#services-nav a::before {
+    font-size: 50px;
+}
+
+.services-nav--first-word {
+    font-size: 5px;
+}
+
+
+#services-nav__bespoke-software {
+    @include icon.prepend("laptop") {
+        font-size: 50px;
+    }
+}
