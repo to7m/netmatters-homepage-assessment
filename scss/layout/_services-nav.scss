@@ -1,5 +1,6 @@
 #services-nav ul {
     display: flex;
+    height: 100%;
 }
 
 #services-nav li {
@@ -8,8 +9,11 @@
 
 #services-nav a {
     flex: 1;
+    margin: auto;
 }
 
 .services-nav--first-word {
     display: block;
+    margin-top: 10px;
+    margin-bottom: 1px;
 }

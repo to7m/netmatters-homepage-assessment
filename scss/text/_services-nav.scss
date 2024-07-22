@@ -1,17 +1,18 @@
 @use "fonts/icon";
+@use "sizes";
 
 
-#services-nav a {
-    font-size: 10px;
-    text-align: center;
+#services-nav {
+    font-size: sizes.$services-nav;
+    line-height: 1;
 }
 
 #services-nav a::before {
-    font-size: 50px;
+    font-size: sizes.$services-nav--icon;
 }
 
 .services-nav--first-word {
-    font-size: 5px;
+    font-size: sizes.$services-nav--first-word;
 }
 
 
