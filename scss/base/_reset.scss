@@ -1,4 +1,4 @@
-/*  Reset - normalise: make behaviour the same on different browsers.  */
+/*  Normalise: make behaviour the same on different browsers.  */
 
 *, *::before, *::after {
     /*  Different browsers supposedly render borders differently. This could be more noticeable
@@ -35,7 +35,7 @@ input, button, textarea, select {
 }
 
 
-/*  Reset - custom: tweaks I prefer as defaults for all my projects.  */
+/*  Custom: tweaks I prefer as defaults for all my projects.  */
 
 * {
     align-items: inherit;
