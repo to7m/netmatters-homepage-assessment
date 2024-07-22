@@ -102,6 +102,10 @@ ol, ul {
   }
 }
 
+#slideshow {
+  height: 550px;
+}
+
 #copyright {
   display: block;
 }
@@ -611,6 +615,7 @@ body {
 }
 
 #slideshow {
+  background-color: black;
   color: rgb(255, 255, 255);
 }
 
@@ -647,8 +652,16 @@ body {
   color: rgb(255, 255, 255);
 }
 
+#call-button {
+  color: rgb(51, 54, 69);
+}
+
 #search-form {
   background-color: rgb(230, 230, 230);
+}
+
+#menu-button {
+  background: rgb(51, 54, 69);
 }
 
 #services-nav__bespoke-software::before {

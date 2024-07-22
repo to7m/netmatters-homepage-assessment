@@ -19,7 +19,10 @@
 
 #services-nav { @include dark; }
 
-#slideshow { color: defs.$white; }
+#slideshow {
+    background-color: black;
+    color: defs.$white;
+}
 
 #services-container { @include light; }
 
