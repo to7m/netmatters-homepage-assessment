@@ -12,8 +12,12 @@
     margin: auto;
 }
 
+.services.nav a::before {
+    margin-top: 1px;
+}
+
 .services-nav--first-word {
     display: block;
-    margin-top: 10px;
+    margin-top: 9px;
     margin-bottom: 1px;
 }

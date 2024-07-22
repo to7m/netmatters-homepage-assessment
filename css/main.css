@@ -177,9 +177,13 @@ ol, ul {
   margin: auto;
 }
 
+.services.nav a::before {
+  margin-top: 1px;
+}
+
 .services-nav--first-word {
   display: block;
-  margin-top: 10px;
+  margin-top: 9px;
   margin-bottom: 1px;
 }
 
@@ -448,7 +452,7 @@ ol, ul {
 body {
   font-family: Poppins, sans-serif;
   letter-spacing: 0.4px;
-  /*line-height: 1.375rem;*/
+  line-height: 1.375rem;
 }
 
 @font-face {
@@ -524,7 +528,66 @@ body {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 50px;
+}
+
+#services-nav__it-support::before {
+  content: "\e956";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+#services-nav__digital-marketing::before {
+  content: "\e904";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+#services-nav__telecoms-services::before {
+  content: "\f2a0";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+#services-nav__web-design::before {
+  content: "\ea80";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+#services-nav__cyber-security::before {
+  content: "\e902";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+#services-nav__developer-course::before {
+  content: "\e905";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 }
 
 #services h1 {
@@ -586,6 +649,34 @@ body {
 
 #search-form {
   background-color: rgb(230, 230, 230);
+}
+
+#services-nav__bespoke-software::before {
+  color: rgb(102, 128, 158);
+}
+
+#services-nav__it-support::before {
+  color: rgb(64, 130, 214);
+}
+
+#services-nav__digital-marketing::before {
+  color: rgb(46, 204, 112);
+}
+
+#services-nav__telecoms-services::before {
+  color: rgb(214, 69, 64);
+}
+
+#services-nav__web-design::before {
+  color: rgb(145, 112, 176);
+}
+
+#services-nav__cyber-security::before {
+  color: rgb(245, 36, 89);
+}
+
+#services-nav__developer-course::before {
+  color: rgb(207, 64, 38);
 }
 
 /*# sourceMappingURL=main.css.map */

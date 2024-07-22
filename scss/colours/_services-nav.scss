@@ -1,0 +1,10 @@
+@use "defs";
+
+
+#services-nav__bespoke-software::before { color: defs.$light-grey; }
+#services-nav__it-support::before { color: defs.$light-blue; }
+#services-nav__digital-marketing::before { color: defs.$green; }
+#services-nav__telecoms-services::before { color: defs.$murky-red; }
+#services-nav__web-design::before { color: defs.$purple; }
+#services-nav__cyber-security::before { color: defs.$reddish-magenta; }
+#services-nav__developer-course::before { color: defs.$murky-orange; }

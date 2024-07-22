@@ -16,8 +16,10 @@
 }
 
 
-#services-nav__bespoke-software {
-    @include icon.prepend("laptop") {
-        font-size: 50px;
-    }
-}
+#services-nav__bespoke-software { @include icon.prepend("laptop") }
+#services-nav__it-support { @include icon.prepend("display") }
+#services-nav__digital-marketing { @include icon.prepend("bar-graph") }
+#services-nav__telecoms-services { @include icon.prepend("volume-control-phone") }
+#services-nav__web-design { @include icon.prepend("embed2") }
+#services-nav__cyber-security { @include icon.prepend("security") }
+#services-nav__developer-course { @include icon.prepend("hat") }
