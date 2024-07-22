@@ -64,8 +64,24 @@ ol, ul {
 }
 
 #top-row {
+  height: 128px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  #top-row {
+    height: 70px;
+  }
+}
+
+#services-nav {
+  display: none;
+  height: 99px;
+}
+@media (min-width: 992px) {
+  #services-nav {
+    display: block;
+  }
 }
 
 #copyright {
@@ -128,11 +144,6 @@ ol, ul {
   border: none;
 }
 
-@media (min-width: 768px) {
-  #top-row {
-    height: 100px;
-  }
-}
 #services-nav ul {
   display: flex;
 }
