@@ -6,11 +6,11 @@
     @include icon.prepend("phone")
 }
 
-#menu-button--icon {
-    font-size: 60px;
-    @include icon.prepend("menu")
-}
-
 #search-form--button {
     @include icon.prepend("search")
+}
+
+#menu-button--icon {
+    font-size: 35px;
+    @include icon.prepend("menu")
 }

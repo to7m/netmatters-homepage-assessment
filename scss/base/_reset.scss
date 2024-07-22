@@ -40,6 +40,8 @@ input, button, textarea, select {
 * {
     align-items: inherit;
     justify-items: inherit;
+    align-content: inherit;
+    justify-content: inherit; 
     text-align: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -50,6 +52,8 @@ input, button, textarea, select {
 body {
     align-items: center;
     justify-items: center;
+    align-content: center;
+    justify-content: center;
     text-align: center;
 }
 
