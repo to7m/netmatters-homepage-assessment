@@ -13,13 +13,13 @@
 }
 
 body {
-  /*  Browser-specific tweaks.  */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   /*  Different browsers supposedly have unique line-height calculations. em units should not
       be used for line-height as they cause issues for child elements with different font
       sizes.                                                                                   */
   line-height: 1.5;
+  /*  Browser-specific tweaks.  */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img, picture, video, canvas, svg {
