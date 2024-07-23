@@ -1,0 +1,7 @@
+@use "defs";
+
+
+#services a {
+    border: 1px solid defs.$lighter_grey_1;
+    border-radius: 15px;
+}

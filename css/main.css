@@ -610,6 +610,10 @@ body {
   font-weight: 400;
 }
 
+#services h2 {
+  font-size: 1.3rem;
+}
+
 #text-links-outer-list li li, #copyright {
   font-size: 0.8125em;
 }
@@ -668,7 +672,7 @@ body {
 
 #search-form {
   background-color: rgb(230, 230, 230);
-  border: solid rgb(204, 204, 204) 2px;
+  border: 2px solid rgb(204, 204, 204);
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgb(212, 212, 212);
 }
@@ -714,6 +718,11 @@ body {
 
 #services-nav__developer-course::before {
   color: rgb(207, 64, 38);
+}
+
+#services a {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
