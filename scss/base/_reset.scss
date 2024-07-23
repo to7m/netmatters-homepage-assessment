@@ -13,6 +13,11 @@
     overflow-wrap: break-word;
 }
 
+*::placeholder {
+    /*  Firefox 128.0 sets this to something else by default.  */
+    opacity: 1;
+}
+
 body {
     /*  Different browsers supposedly have unique line-height calculations. em units should not
         be used for line-height as they cause issues for child elements with different font
@@ -41,7 +46,7 @@ input, button, textarea, select {
     align-items: inherit;
     justify-items: inherit;
     align-content: inherit;
-    justify-content: inherit; 
+    justify-content: inherit;
     text-align: inherit;
     font-size: inherit;
     font-weight: inherit;

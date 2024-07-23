@@ -1,16 +1,23 @@
 @use "fonts/icon";
+@use "sizes";
 
 
 #call-button--icon {
-    font-size: 27px;
+    font-size: sizes.$call-button--icon;
     @include icon.prepend("phone")
 }
 
+#search-form--bar {
+    font-size: sizes.$search-form--bar;
+    text-align: left;
+}
+
 #search-form--button {
+    font-size: sizes.$search-form--button;
     @include icon.prepend("search")
 }
 
 #menu-button--icon {
-    font-size: 35px;
+    font-size: sizes.$menu-button--icon;
     @include icon.prepend("menu")
 }

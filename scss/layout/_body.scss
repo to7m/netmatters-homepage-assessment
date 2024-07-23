@@ -10,7 +10,7 @@ $_total_min_padding: $_min_padding * 2;
     // Resulting width may end up lower (padded) to ensure 15px margin. This is mainly to combat 
     // the horizontal space the scroll bar takes up on small zoomed-out screens.
 
-    @return min(100% - ($_total_min_padding), $width);
+    @return min(100% - $_total_min_padding, $width);
 }
 
 

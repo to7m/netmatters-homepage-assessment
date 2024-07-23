@@ -12,6 +12,11 @@
   overflow-wrap: break-word;
 }
 
+*::placeholder {
+  /*  Firefox 128.0 sets this to something else by default.  */
+  opacity: 1;
+}
+
 body {
   /*  Different browsers supposedly have unique line-height calculations. em units should not
       be used for line-height as they cause issues for child elements with different font
@@ -156,11 +161,14 @@ ol, ul {
 }
 
 #search-form--bar {
+  width: 100%;
   border: none;
+  padding-left: 15px;
 }
 
 #search-form--button {
   border: none;
+  margin-right: 11px;
 }
 
 #menu-button {
@@ -483,6 +491,14 @@ body {
   text-transform: none;
 }
 
+#search-form--bar {
+  font-size: 14px;
+  text-align: left;
+}
+
+#search-form--button {
+  font-size: 20px;
+}
 #search-form--button::before {
   content: "\f002";
   font-family: "icomoon" !important;
@@ -656,8 +672,15 @@ body {
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgb(212, 212, 212);
 }
-
+#search-form--bar {
+  background-color: inherit;
+  color: rgb(84, 84, 84);
+}
+#search-form--bar::placeholder {
+  color: rgb(135, 135, 135);
+}
 #search-form--button {
+  background-color: inherit;
   color: rgb(51, 54, 69);
 }
 
