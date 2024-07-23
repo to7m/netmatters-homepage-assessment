@@ -5,4 +5,24 @@
     border: 1px solid defs.$lighter_grey_1;
     border-radius: 15px;
     box-shadow: 0 3px 35px defs.$lighter_grey_3;
+
+    &::before { color: defs.$white; }
+    .read-more-button { color: defs.$white; }
 }
+
+
+#services-list__bespoke-software::before { background-color: defs.$light_grey; }
+#services-list__it-support::before { background-color: defs.$light_blue; }
+#services-list__digital-marketing::before { background-color: defs.$green; }
+#services-list__telecoms-services::before { background-color: defs.$murky_red; }
+#services-list__web-design::before { background-color: defs.$purple; }
+#services-list__cyber-security::before { background-color: defs.$reddish_magenta; }
+#services-list__developer-training::before { background-color: defs.$murky_orange; }
+
+#services-list__bespoke-software .read-more-button { background-color: defs.$gold; }
+#services-list__it-support .read-more-button { background-color: defs.$light_blue; }
+#services-list__digital-marketing .read-more-button { background-color: defs.$green; }
+#services-list__telecoms-services .read-more-button { background-color: defs.$murky_red; }
+#services-list__web-design .read-more-button { background-color: defs.$purple; }
+#services-list__cyber-security .read-more-button { background-color: defs.$reddish_magenta; }
+#services-list__developer-training .read-more-button { background-color: defs.$murky_orange; }

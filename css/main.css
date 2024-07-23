@@ -228,8 +228,26 @@ ol, ul {
 }
 
 #services ul a {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 30px;
+}
+#services ul a::before {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  padding-top: 21px;
+  margin-bottom: 17px;
+}
+#services ul a h2 {
+  margin-bottom: 21px;
+}
+#services ul a .read-more-button {
+  margin-top: 13px;
+  padding: 12.5px 16px;
+  border-radius: 3px;
 }
 
 #services ul {
@@ -643,15 +661,11 @@ body {
   font-weight: 400;
 }
 
-#services h2 {
-  font-size: 1.3rem;
-}
-
-.view-our-work {
-  font-size: 1.625rem;
+#view-our-work--1 {
   font-weight: 600;
+  font-size: 2.25rem;
 }
-.view-our-work::after {
+#view-our-work--1::after {
   content: "\ea3c";
   font-family: "icomoon" !important;
   font-style: normal;
@@ -659,6 +673,98 @@ body {
   font-variant: normal;
   text-transform: none;
   margin-left: 6.5px;
+}
+#view-our-work--2 {
+  font-weight: 600;
+  font-size: 1.625rem;
+}
+#view-our-work--2::after {
+  content: "\ea3c";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  margin-left: 6.5px;
+}
+
+#services ul a::before {
+  font-size: 2rem;
+}
+
+#services h2 {
+  font-size: 1.3rem;
+}
+
+#services p {
+  font-size: 0.8125rem;
+}
+
+#services .read-more-button {
+  font-size: 1.063rem;
+}
+
+#services-list__bespoke-software::before {
+  content: "\e957";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+#services-list__it-support::before {
+  content: "\e956";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+#services-list__digital-marketing::before {
+  content: "\e904";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+#services-list__telecoms-services::before {
+  content: "\f2a0";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+#services-list__web-design::before {
+  content: "\ea80";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+#services-list__cyber-security::before {
+  content: "\e902";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+#services-list__developer-training::before {
+  content: "\e905";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
 }
 
 #articles {
@@ -789,6 +895,68 @@ footer {
   border: 1px solid rgb(204, 204, 204);
   border-radius: 15px;
   box-shadow: 0 3px 35px rgb(230, 230, 230);
+}
+#services ul a::before {
+  color: rgb(255, 255, 255);
+}
+#services ul a .read-more-button {
+  color: rgb(255, 255, 255);
+}
+
+#services-list__bespoke-software::before {
+  background-color: rgb(102, 128, 158);
+}
+
+#services-list__it-support::before {
+  background-color: rgb(64, 130, 214);
+}
+
+#services-list__digital-marketing::before {
+  background-color: rgb(46, 204, 112);
+}
+
+#services-list__telecoms-services::before {
+  background-color: rgb(214, 69, 64);
+}
+
+#services-list__web-design::before {
+  background-color: rgb(145, 112, 176);
+}
+
+#services-list__cyber-security::before {
+  background-color: rgb(245, 36, 89);
+}
+
+#services-list__developer-training::before {
+  background-color: rgb(207, 64, 38);
+}
+
+#services-list__bespoke-software .read-more-button {
+  background-color: rgb(247, 179, 33);
+}
+
+#services-list__it-support .read-more-button {
+  background-color: rgb(64, 130, 214);
+}
+
+#services-list__digital-marketing .read-more-button {
+  background-color: rgb(46, 204, 112);
+}
+
+#services-list__telecoms-services .read-more-button {
+  background-color: rgb(214, 69, 64);
+}
+
+#services-list__web-design .read-more-button {
+  background-color: rgb(145, 112, 176);
+}
+
+#services-list__cyber-security .read-more-button {
+  background-color: rgb(245, 36, 89);
+}
+
+#services-list__developer-training .read-more-button {
+  background-color: rgb(207, 64, 38);
 }
 
 /*# sourceMappingURL=main.css.map */

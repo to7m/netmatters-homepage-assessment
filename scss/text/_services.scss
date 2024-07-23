@@ -8,15 +8,29 @@
     font-weight: 400;
 }
 
-#services h2 {
-    font-size: sizes.$services__h2;
-}
-
-.view-our-work {
-    font-size: sizes.$view-our-work;
-    font-weight: 600;
-
-    @include icon.append("arrow-right2") {
-        margin-left: 6.5px;
+#view-our-work {
+    &--1 {
+        font-weight: 600;
+        font-size: sizes.$view-our-work--1;
+        @include icon.append("arrow-right2") { margin-left: 6.5px; }
+    }
+    &--2 {
+        font-weight: 600;
+        font-size: sizes.$view-our-work--2;
+        @include icon.append("arrow-right2") { margin-left: 6.5px; }
     }
 }
+
+#services ul a::before { font-size: sizes.$services--icon; }
+#services h2 { font-size: sizes.$services__h2; }
+#services p { font-size: sizes.$services__p; }
+#services .read-more-button { font-size: sizes.$services__read-more-button; }
+
+
+#services-list__bespoke-software { @include icon.prepend("laptop") }
+#services-list__it-support { @include icon.prepend("display") }
+#services-list__digital-marketing { @include icon.prepend("bar-graph") }
+#services-list__telecoms-services { @include icon.prepend("volume-control-phone") }
+#services-list__web-design { @include icon.prepend("embed2") }
+#services-list__cyber-security { @include icon.prepend("security") }
+#services-list__developer-training { @include icon.prepend("hat") }
