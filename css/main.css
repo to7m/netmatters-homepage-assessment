@@ -614,6 +614,12 @@ body {
   font-size: 1.3rem;
 }
 
+#articles h1 {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
 #text-links-outer-list li li, #copyright {
   font-size: 0.8125em;
 }

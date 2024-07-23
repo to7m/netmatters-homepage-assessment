@@ -1,0 +1,8 @@
+@use "sizes";
+
+
+#articles h1 {
+    font-size: sizes.$articles__h1;
+    line-height: 1.1;
+    font-weight: 600;
+}
