@@ -1,9 +1,12 @@
+@use "sizes";
+
+
 #services h1 {
-    font-size: 2.7rem;
+    font-size: sizes.$services__h1;
     letter-spacing: 0.4px;
     font-weight: 400;
 }
 
 #services h2 {
-    font-size: 1.3rem;
+    font-size: sizes.$services__h2;
 }
