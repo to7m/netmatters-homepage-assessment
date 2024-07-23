@@ -1,6 +1,10 @@
 @use "sizes";
 
 
+#articles {
+    text-align: left;
+}
+
 #articles h1 {
     font-size: sizes.$articles__h1;
     line-height: 1.1;
