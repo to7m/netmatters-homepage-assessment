@@ -738,7 +738,7 @@ footer {
   color: rgb(207, 64, 38);
 }
 
-#services li a {
+#services ul a {
   border: 1px solid rgb(204, 204, 204);
   border-radius: 15px;
   box-shadow: 0 3px 35px rgb(230, 230, 230);

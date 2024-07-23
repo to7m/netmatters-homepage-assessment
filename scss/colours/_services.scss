@@ -1,7 +1,7 @@
 @use "defs";
 
 
-#services li a {
+#services ul a {
     border: 1px solid defs.$lighter_grey_1;
     border-radius: 15px;
     box-shadow: 0 3px 35px defs.$lighter_grey_3;
