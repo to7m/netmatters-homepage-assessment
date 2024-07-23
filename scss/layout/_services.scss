@@ -27,11 +27,10 @@ $_list_item_suffixes: (
 }
 
 
-#services {
-    margin-top: 37px;
-    display: grid;
-    grid-template-rows: 119px auto auto;
-    grid-template-columns: 100%;
+#services__top-row {
+    height: 156px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #services ul {
@@ -102,4 +101,11 @@ $_list_item_suffixes: (
             "2 / 10 / 3 / 13"
         )
     );
+}
+
+
+#view-our-work--1 { display: none; }
+@include breakpoints.b {
+    #view-our-work--1 { display: inline; }
+    #view-our-work--2 { display: none; }
 }
