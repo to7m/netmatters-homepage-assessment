@@ -15,7 +15,7 @@
 }
 
 
-$icon-chars-for-names: (
+$icon_chars_for_names: (
     "arrow-right2": "\ea3c",
     "arrow-shuffle": "\e901",
     "bar-graph": "\e904",
@@ -78,13 +78,18 @@ $icon-chars-for-names: (
 );
 
 
-@mixin prepend($icon-name) {
-    @if not map-has-key($icon-chars-for-names, $icon-name) {
-        @error "icon-name \"#{$icon-name}\" not recognised";
+@function _get_icon_char($icon_name) {
+    @if not map-has-key($icon_chars_for_names, $icon_name) {
+        @error "$icon_name \"#{$icon_name}\" not recognised";
     }
 
-    &::before {
-        content: map.get($icon-chars-for-names, $icon-name);
+    @return map.get($icon_chars_for_names, $icon_name);
+}
+
+
+@mixin _insert($position, $icon-name) {
+    &::#{$position} {
+        content: _get_icon_char($icon-name);
         font-family: 'icomoon' !important;
         font-style: normal;
         font-weight: normal;
@@ -93,3 +98,6 @@ $icon-chars-for-names: (
         @content;
     }
 }
+
+@mixin prepend($icon-name) { @include _insert("before", $icon_name) { @content; } }
+@mixin append($icon-name) { @include _insert("after", $icon_name) { @content; } }

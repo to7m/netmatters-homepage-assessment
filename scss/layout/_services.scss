@@ -27,10 +27,19 @@ $_list_item_suffixes: (
 }
 
 
+#services {
+    display: grid;
+    grid-template-rows: 149.5px auto 54.5px;
+}
+
 #services__top-row {
-    height: 156px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+#services h1 {
+    margin-top: 10px;
 }
 
 #services ul {
@@ -108,4 +117,9 @@ $_list_item_suffixes: (
 @include breakpoints.b {
     #view-our-work--1 { display: inline; }
     #view-our-work--2 { display: none; }
+}
+
+#view-our-work--2 {
+    margin-top: auto;
+    margin-bottom: -2px;
 }

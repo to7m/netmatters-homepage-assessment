@@ -203,10 +203,19 @@ ol, ul {
   margin-bottom: 1px;
 }
 
+#services {
+  display: grid;
+  grid-template-rows: 149.5px auto 54.5px;
+}
+
 #services__top-row {
-  height: 156px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+#services h1 {
+  margin-top: 10px;
 }
 
 #services ul {
@@ -349,6 +358,11 @@ ol, ul {
     display: none;
   }
 }
+#view-our-work--2 {
+  margin-top: auto;
+  margin-bottom: -2px;
+}
+
 #articles {
   display: grid;
   grid-template-rows: auto auto;
@@ -615,6 +629,14 @@ body {
   text-transform: none;
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../icomoon-fonts/fonts/icomoon.eot?fv394j");
+  src: url("../icomoon-fonts/fonts/icomoon.eot?fv394j#iefix") format("embedded-opentype"), url("../icomoon-fonts/fonts/icomoon.ttf?fv394j") format("truetype"), url("../icomoon-fonts/fonts/icomoon.woff?fv394j") format("woff"), url("../icomoon-fonts/fonts/icomoon.svg?fv394j#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 #services h1 {
   font-size: 2.7rem;
   letter-spacing: 0.4px;
@@ -623,6 +645,20 @@ body {
 
 #services h2 {
   font-size: 1.3rem;
+}
+
+.view-our-work {
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+.view-our-work::after {
+  content: "\ea3c";
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  margin-left: 6.5px;
 }
 
 #articles {

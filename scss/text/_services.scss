@@ -1,3 +1,4 @@
+@use "fonts/icon";
 @use "sizes";
 
 
@@ -9,4 +10,13 @@
 
 #services h2 {
     font-size: sizes.$services__h2;
+}
+
+.view-our-work {
+    font-size: sizes.$view-our-work;
+    font-weight: 600;
+
+    @include icon.append("arrow-right2") {
+        margin-left: 6.5px;
+    }
 }
