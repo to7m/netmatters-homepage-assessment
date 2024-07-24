@@ -1,0 +1,19 @@
+#corporate-customers {
+    overflow-x: hidden;
+    margin: 50px 0px;
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+}
+
+#corporate-customers li {
+    display: contents;
+}
+
+#corporate-customers img {
+    max-height: 100%;
+    margin: auto 20px;
+    filter: grayscale(100%);
+    &:hover { filter: none; }
+}
