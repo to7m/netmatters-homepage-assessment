@@ -21,3 +21,18 @@
 #articles p {
     margin-bottom: 25px;
 }
+
+#articles footer {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 17px 10px;
+}
+
+#welcome-to-netmatters footer a {
+    padding: 11px 31px;
+}
+
+#what-our-clients-think footer a {
+    padding: 10px 30px;
+}
