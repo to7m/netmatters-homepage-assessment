@@ -2,6 +2,8 @@
 
 
 #articles {
+    margin-top: 44px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 100%;
@@ -9,5 +11,13 @@
     @include breakpoints.c {
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+
+    p {
+        margin-bottom: 25px;
     }
 }
