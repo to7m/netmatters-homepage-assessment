@@ -381,6 +381,30 @@ ol, ul {
   margin-bottom: -2px;
 }
 
+#credentials {
+  overflow-x: hidden;
+  margin: 50px 0px;
+  height: 70px;
+}
+
+#credentials ul {
+  display: flex;
+  justify-content: left;
+  gap: 45px;
+}
+
+#credentials li {
+  height: 100%;
+  filter: grayscale(100%);
+}
+#credentials li:hover {
+  filter: none;
+}
+
+#credentials img {
+  margin: auto 20px;
+}
+
 #articles {
   display: grid;
   grid-template-rows: auto auto;
