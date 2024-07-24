@@ -415,9 +415,11 @@ ol, ul {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 #articles h1 {
   margin-bottom: 40px;
 }
+
 #articles p {
   margin-bottom: 25px;
 }
@@ -833,6 +835,10 @@ body {
 }
 #welcome-to-netmatters p:first-of-type {
   font-weight: 600;
+}
+
+#welcome-to-netmatters a {
+  font-size: 20px;
 }
 
 #news {
