@@ -47,7 +47,8 @@
 }
 
 #call-button {
-    display: contents
+    display: contents;
+    @include breakpoints.b { display: none; }
 }
 
 #call-button--icon {
@@ -58,6 +59,8 @@
     grid-area: search;
     height: 100%;
     width: 100%;
+    border-width: 2px;
+    border-style: solid;
     display: flex;
 }
 
