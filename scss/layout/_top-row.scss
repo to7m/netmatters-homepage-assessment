@@ -13,7 +13,7 @@
 
     @include breakpoints.b {
         grid-template-rows: 70px;
-        grid-template-columns: 1fr 174px 63px;
+        grid-template-columns: 1fr 237px 63px;
         grid-template-areas: "logo search menu";
     }
 
@@ -36,6 +36,13 @@
     justify-self: start;
     width: min(100% + 5px, 402px);
     height: auto;
+
+    @include breakpoints.b {
+        align-self: start;
+        width: 345px;
+    };
+    @include breakpoints.c { width: 374px; };
+    @include breakpoints.d { width: 370px; };
 }
 
 #specifics-nav {
@@ -62,6 +69,11 @@
     border-width: 2px;
     border-style: solid;
     display: flex;
+
+    @include breakpoints.b {
+        height: 56px;
+        border-width: 0;
+    }
 }
 
 #search-form--bar {
