@@ -26,7 +26,7 @@ $_total_min_padding: $_min_padding * 2;
 
 #top-row {
     height: 128px;
-    @include breakpoints.c {height: 70px; }
+    @include breakpoints.b {height: 70px; }
     margin-top: 20px;
     margin-bottom: 20px;
 }

@@ -95,7 +95,7 @@ ol, ul {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #top-row {
     height: 70px;
   }
